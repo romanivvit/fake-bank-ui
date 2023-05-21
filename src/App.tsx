@@ -9,6 +9,7 @@ import NotFound from "./modules/NotFound";
 import {RegisterPage} from "./modules/RegisterPage/RegisterPage";
 import AccountPage from "./modules/AccountPage";
 import TransferPage from "./modules/TransferPage";
+import TransferHistoryPage from "./modules/TransferHistory";
 
 function App() {
     const isAuthenticated = useSelector(selectAuthStatus);
@@ -21,6 +22,7 @@ function App() {
                 {isAuthenticated && <Route path="/" element={<DashboardPage />} />}
                 {isAuthenticated && <Route path="/account" element={<AccountPage />} />}
                 {isAuthenticated && <Route path="/transfer" element={<TransferPage />} />}
+                {isAuthenticated && <Route path="/history" element={<TransferHistoryPage />} />}
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>

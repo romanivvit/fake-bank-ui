@@ -7,8 +7,8 @@ import {selectAccountBalance} from "../../store/slices/account";
 export const DashboardPage = () => {
     const userName = useSelector(selectUserName);
     const accountBalance = useSelector(selectAccountBalance);
-    const {accountData} = useAccount();
-    console.log(accountData);
+    useAccount();
+
     return (
         <div className='details-page'>
             <img src={DetailsBanner} alt=""/>

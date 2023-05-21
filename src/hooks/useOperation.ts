@@ -3,11 +3,12 @@ import {useAppDispatch} from "../store/hooks";
 import {useSelector} from "react-redux";
 import {selectUserId} from "../store/slices/user";
 import {operationApiService} from "../service/operation/operation.service";
+import {setOperationHistory, setOperationState} from "../store/slices/operation";
 
 export const useOperation = () => {
     const dispatch = useAppDispatch();
     const userId = useSelector(selectUserId);
-    const { isLoading, data: operationData } = useQuery(
+    const { isLoading, data: operationData,  } = useQuery(
         ['get-operation', userId],
         () => operationApiService.receiveOperationHistory(`${userId}`),
         {
@@ -15,7 +16,11 @@ export const useOperation = () => {
                 console.log('here error', error);
             },
             onSuccess: (res) => {
-                console.log(res);
+                const data = {
+                    operations: res.operations,
+                    creationDate: res.created_at
+                };
+                dispatch(setOperationHistory(data))
             },
         }
     );
@@ -30,11 +35,10 @@ export const useOperation = () => {
         {
             mutationKey: ['create-operation'],
             onError: (error) => {
-                console.log('here error', error);
+                dispatch(setOperationState(false));
             },
             onSuccess: (res) => {
-                console.log(res);
-                // dispatch(setUserData(newUserData));
+                dispatch(setOperationState(true));
             },
         },
     );
@@ -43,5 +47,8 @@ export const useOperation = () => {
         isLoading,
         createOperationData,
         createOperation,
+        errorOperationData,
+        isLoadingOperationData,
+        operationData
     };
 };

@@ -1,15 +1,18 @@
 import './styles.scss';
-import {FormEvent} from "react";
+import {FormEvent, useEffect, useState} from "react";
 import {useSelector} from "react-redux";
 import {selectUserId} from "../../store/slices/user";
 import {useOperation} from "../../hooks/useOperation";
+import {selectOperationState} from "../../store/slices/operation";
+import {useAppDispatch} from "../../store/hooks";
 export const TransferPage = () => {
+    const dispatch = useAppDispatch();
     const userId = useSelector(selectUserId);
+    const operationState = useSelector(selectOperationState)
 
     const {createOperation} = useOperation();
     const handleOperation = async(e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(e);
 
         // @ts-ignore
         const data =
@@ -20,6 +23,7 @@ export const TransferPage = () => {
             // @ts-ignore
             "value": e.target[1].value
         }
+
         await createOperation(data);
     }
     return (
@@ -28,6 +32,9 @@ export const TransferPage = () => {
             <div className="transfer-container">
                 <div className="card">
                     <form className="login-form" onSubmit={(e) => handleOperation(e)}>
+                        {
+                            <h2>{operationState ?'Transfer done successfully' :'Transfer declined'}</h2>
+                        }
                         <h2>Receiver Account ID</h2>
                         <input type="number" placeholder="Receiver Account ID"/>
                         <h2>Amount</h2>
