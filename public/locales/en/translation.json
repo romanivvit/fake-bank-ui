@@ -1,0 +1,14 @@
+{
+  "header": {
+    "hotelName": "SenatorFlats",
+    "home": "Home",
+    "apartments": "Apartments",
+    "map": "Map",
+    "contact": "Contact",
+    "anreise": "Anreise",
+    "en": "EN",
+    "de": "DE",
+    "ru": "RU",
+    "es": "ES"
+  }
+}

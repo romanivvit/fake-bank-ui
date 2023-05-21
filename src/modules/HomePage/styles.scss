@@ -1,0 +1,49 @@
+.main-wrapper{
+  display: flex;
+
+  .banner-text,.main-banner{
+    flex: 1 1 50%;
+    height: 100vh;
+  }
+
+  .banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F6F6;
+
+    h1{
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 88px;
+      line-height: 117px;
+      color: #000000;
+      max-width: 500px;
+    }
+
+    .auth-buttons {
+      button:first-child {
+        margin-right: 15px;
+      }
+      button {
+        width: 180px;
+        height: 55px;
+        background: #b0b2b4;
+        border-radius: 7px;
+        border: none;
+        font-family: 'Montserrat', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #192F3A;
+        cursor: pointer;
+      }
+    }
+  }
+  .main-banner img{
+    height: 100%; width: 100%;
+  }
+}

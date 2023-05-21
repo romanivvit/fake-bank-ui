@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4219bcc.css",
+    "main.js": "/static/js/main.d0f55fba.js",
+    "static/js/787.f6a2a393.chunk.js": "/static/js/787.f6a2a393.chunk.js",
+    "static/media/main-banner.png": "/static/media/main-banner.6dbd252660fe52c4ccc4.png",
+    "static/media/apart-1.png": "/static/media/apart-1.7672b8141011ff9188b8.png",
+    "static/media/contact-form-background.png": "/static/media/contact-form-background.d2d32dd8319548404789.png",
+    "static/media/banner-flat.png": "/static/media/banner-flat.d8c655c26afec2178f47.png",
+    "static/media/apartments-photo.png": "/static/media/apartments-photo.8408804ef188baa59760.png",
+    "static/media/contact-form-banner.png": "/static/media/contact-form-banner.82ec8dfb786c7435a8c2.png",
+    "static/media/apart-2.jpeg": "/static/media/apart-2.5edddfd976ffdcf04969.jpeg",
+    "static/media/apart-3.jpeg": "/static/media/apart-3.81de7890a59f003cc2d4.jpeg",
+    "static/media/bookin-form-background.png": "/static/media/bookin-form-background.8d6d5cff33ac4dc7fe85.png",
+    "static/media/main-logo.png": "/static/media/main-logo.2aecd4c5d2a5be8f0c44.png",
+    "static/media/user-icon.svg": "/static/media/user-icon.4c5de92c1d2bbeef43767be6033282d3.svg",
+    "static/media/wifi-icon.svg": "/static/media/wifi-icon.5652e86ef46dc29f987a643dcc44ab8e.svg",
+    "static/media/email-icon.svg": "/static/media/email-icon.97ee7f8a5e4b5299c4fd4d7b275a39ab.svg",
+    "static/media/space-icon.svg": "/static/media/space-icon.364f98cae88101ed0c7bb7b304176b07.svg",
+    "static/media/parking-icon.svg": "/static/media/parking-icon.842bf9240bfce3584094706f8c12c5f0.svg",
+    "static/media/facebook-icon.svg": "/static/media/facebook-icon.ad533145908a77654af54749d7de4bb2.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-right-black.svg": "/static/media/arrow-right-black.53c31338ae2b9af52dfa19ebeb2d8817.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.051e7ebc9b681f88a4a3b1312e313e8d.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
+    "static/media/feedback-star.svg": "/static/media/feedback-star.5bbdb40a5cfb3e43276be8d60e1c13b3.svg",
+    "static/media/arrow.svg": "/static/media/arrow.2af2416951d538c67cbc9eafa8d51525.svg",
+    "main.e4219bcc.css.map": "/static/css/main.e4219bcc.css.map",
+    "main.d0f55fba.js.map": "/static/js/main.d0f55fba.js.map",
+    "787.f6a2a393.chunk.js.map": "/static/js/787.f6a2a393.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4219bcc.css",
+    "static/js/main.d0f55fba.js"
+  ]
+}
